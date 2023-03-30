@@ -1,0 +1,125 @@
+body {
+font-family: 'Montserrat', sans-serif;
+padding: 0;
+margin: 0;
+background: linear-gradient(to bottom, #FFA07A, #FFC0CB, #87CEFA);
+color: #333;
+}
+
+nav {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+height: 64px;
+padding: 0 24px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+overflow: hidden;
+background: linear-gradient(to bottom, #FFA07A, #FFC0CB, #87CEFA);
+display: flex;
+justify-content: space-between;
+align-items: center;
+transition: background 0.5s ease-in-out;
+}
+
+nav:hover {
+background: linear-gradient(to bottom, #87CEFA, #FFA07A, #FFC0CB);
+}
+
+.logo {
+display: flex;
+align-items: center;
+font-weight: bold;
+letter-spacing: 2px;
+}
+
+.logo img {
+height: 48px;
+}
+
+.search-box {
+flex: 1;
+max-width: 500px;
+margin: 0 auto;
+display: flex;
+justify-content: center;
+}
+
+.search-box input[type="text"] {
+width: 100%;
+max-width: 400px;
+padding: 12px;
+border-radius: 4px;
+border: none;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+color: #333;
+background-color: #fff;
+font-size: 16px;
+}
+
+.search-box input[type="text"]::placeholder {
+color: #999;
+}
+
+.login-box {
+display: flex;
+align-items: center;
+}
+
+.login-box a {
+color: white;
+text-decoration: none;
+margin-right: 10px;
+font-size: 16px;
+}
+
+.login-box button {
+background-color: #fff;
+border: none;
+color: #333;
+padding: 12px 16px;
+border-radius: 4px;
+cursor: pointer;
+font-size: 16px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidenav {
+position: fixed;
+top: 80px;
+left: 0;
+bottom: 0;
+width: 200px;
+background: linear-gradient(to bottom, #FFA07A, #FFC0CB, #87CEFA);
+overflow-y: auto;
+box-shadow: 1px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidenav a {
+display: block;
+padding: 16px;
+color: #333;
+text-decoration: none;
+font-size: 16px;
+transition: all 0.2s ease-in-out;
+}
+
+.sidenav a.active {
+background-color: #333;
+color: #fff;
+}
+
+.dropdown-btn {
+display: block;
+padding: 16px;
+color: #333;
+background: none;
+border: none;
+text-align: left;
+cursor: pointer;
+font-size: 16px;
+}
+
+.dropdown-btn:hover {
+background-color: #f2f2f2;
+}
