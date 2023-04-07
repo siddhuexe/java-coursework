@@ -1,18 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login</title>
-	<link rel="stylesheet" type="text/css" href="login.css">
+	<title>Sign in </title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<style>
+		body {
+  background: #1f2327;
+  color: #fff;
+}
+
+.login-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #404448;
+  border-radius: 3px;
+  background-color: #2f363d;
+}
+
+.login-form h1 {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  display: block;
+  width: 90%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #3f4448;
+  border-radius:2px;
+  box-shadow: none;
+  background-color: #3f4448;
+  color: #fff;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.form-group input:hover {
+  border-color: #a7d0ff;
+  outline: none;
+}
+.form-group input:focus {
+  border-color: #2188ff;
+  outline: none;
+}
+
+button[type="submit"] {
+  width: 40%;
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  border-radius: 8px;
+}
+
+button[type="submit"]:hover {
+  box-shadow: 1px 1px 10px 1px rgb(247, 149, 149);
+}
+	</style>
 </head>
 <body>
-	<div>
-		<fieldset>
-			<form action="login.jsp" method="post">
-				<input type="text" id="username" name="username" placeholder="Email or username" required>
-				<input type="password" id="password" name="password" placeholder="Password" required>
-				<button type="submit">Login</button>
-			</form>
-		</fieldset>
-	</div>
+	<form class="login-form" action="login.jsp" method="post">
+		<h2>Sign in to Mirai</h2>
+		<div class="form-group">
+		  <label for="username">Username or email address</label>
+		  <input type="text" id="username" name="username" required>
+		</div>
+		<div class="form-group">
+		  <label for="password">Password</label>
+		  <input type="password" id="password" name="password" required>
+		</div>
+		<button type="submit">Sign in</button>
+	  </form>
+	  
 </body>
 </html>
